@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/banner-categories",
+  "version": "0.1.0",
+  "title": "Banner Categories",
+  "category": "brand",
+  "icon": "smileIcon",
+  "description": "Display expandable list of categories with custom titles",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "editMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "image": {
+      "type": "string",
+      "default": "https://via.placeholder.com/150x150/00BCD4/00BCD4"
+    },
+    "mediaId": {
+      "type": "number",
+      "default": ""
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  }
+}

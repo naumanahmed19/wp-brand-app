@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/categories",
+  "version": "0.1.0",
+  "title": "Woo Categories",
+  "category": "brand",
+  "icon": "layout",
+  "description": "Display categories list with thumbnails in a carousel or grid",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "settings": {
+      "type": "object",
+      "default": {
+        "text": "",
+        "layout": "carousel",
+        "columns": 4,
+        "showLabel": true,
+        "thumbnailStyle": {
+          "height": 65,
+          "width": 65,
+          "borderRadius": 5
+        }
+      }
+    },
+    "editMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  }
+}

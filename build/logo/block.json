@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/logo",
+  "version": "0.1.0",
+  "title": "Logo",
+  "category": "brand",
+  "icon": "layout",
+  "description": "Add a logo block",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "settings": {
+      "type": "object",
+      "default": {
+        "logo": {
+          "id": null,
+          "url": ""
+        },
+        "logoLight": {
+          "id": null,
+          "url": ""
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    }
+  }
+}

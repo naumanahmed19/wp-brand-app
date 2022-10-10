@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "xapp/testb",
+  "version": "0.1.0",
+  "title": "Text",
+  "category": "xapp",
+  "icon": "layout",
+  "description": "An app bar for each main screen",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "default": "text"
+    },
+    "args": {
+      "type": "object",
+      "default": {
+        "text": "",
+        "style": {
+          "fontSize": 18
+        }
+      }
+    }
+  }
+}

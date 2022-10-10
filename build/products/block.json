@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/products",
+  "version": "0.1.0",
+  "title": "Products Carousel",
+  "category": "brand",
+  "icon": "layout",
+  "description": "Display categories list with thumbnails in a carousel or grid",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "settings": {
+      "type": "object",
+      "default": {
+        "layout": "carousel",
+        "numberOfPosts": 6,
+        "columns": 2,
+        "showTitle": true
+      }
+    },
+    "editMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    }
+  }
+}

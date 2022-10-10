@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/splash",
+  "version": "0.1.0",
+  "title": "Brand Splash Screen",
+  "category": "brand",
+  "icon": "layout",
+  "description": "A splash screen view of you app",
+  "supports": {
+    "html": false,
+    "multiple": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "recordId": {
+      "type": "number"
+    },
+    "style": {
+      "type": "string",
+      "default": "none"
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    }
+  }
+}

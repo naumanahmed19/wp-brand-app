@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/slider",
+  "version": "0.1.0",
+  "title": "Brand Slider",
+  "category": "brand",
+  "icon": "layout",
+  "description": "An image slider",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "brand",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "editMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "slides": {
+      "type": "array",
+      "default": []
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  }
+}

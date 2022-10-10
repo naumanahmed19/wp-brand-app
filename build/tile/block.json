@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brand/tile",
+  "version": "0.1.0",
+  "title": "Brand List Tile",
+  "category": "brand",
+  "icon": "layout",
+  "description": "Add a list tile block",
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "align": [
+      "center",
+      "full",
+      "left",
+      "right",
+      "wide"
+    ]
+  },
+  "textdomain": "mdc-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "other",
+      "label": "Other"
+    }
+  ],
+  "attributes": {
+    "settings": {
+      "type": "object",
+      "default": {}
+    },
+    "tile": {
+      "type": "object",
+      "default": {
+        "leadingIcon": {
+          "code": 61318,
+          "name": "grain",
+          "uid": "3cce69b099575abea7f212e3529b747b"
+        }
+      }
+    },
+    "auth": {
+      "type": "boolean",
+      "default": false
+    },
+    "action": {
+      "type": "string",
+      "default": "premade"
+    },
+    "postId": {
+      "type": "number",
+      "default": null
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  }
+}
